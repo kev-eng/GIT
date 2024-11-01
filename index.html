@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop-GIT</title>
+    <link rel="stylesheet" href="stylo.css">
+</head>
+<body>
+    <header>
+    <h1>Workshop-GIT</h1>
+</header>
+
+    <h2>¿Qué es un control de versiones?</h2>
+    <p>Se encarga del registro de los cambios realizados a lo largo del tiempo en uno o un conjunto de archivos (versiones), de forma tal que estos puedan ser recuperados con precisión de acuerdo a las necesidades de los usuarios. A este tipo de procesos se le puede denominar versionamiento y si bien este tipo de actividades son comunes en archivos o código fuente en la industria del desarrollo de software, este es un proceso aplicable a cualquier tipo de archivo.</p>
+
+    <h2>¿Qué es GIT?</h2>
+    <p>Git es un sistema de control de versiones que nació en el año 2005 producto de las necesidades que afrontaba la comunidad del kernel de Linux de encontrar un mecanismo que les permitiera soportar las actualizaciones y mantenimientos que requería este gran proyecto. Según Git (2021), algunos de los objetivos trazados que debía cumplir este nuevo mecanismo incluían:
+        <ul>
+            <li>Velocidad</li>
+            <li>Diseño Sencillo</li>
+            <li>Soporte para múltiples desarrollos no lineales.</li>
+            <li>Debía ser un sistema totalmente distribuido.</li>
+            <li>Debía ser capaz de manejar eficientemente proyectos de gran envergadura.</li>
+        </ul>
+    </p>
+
+    <h2>¿Qué es un repositorio?, repositorio locales y remotos.</h2>
+
+    <p>
+        <ul>
+            <li><strong> Repositorio:</strong> Lugar donde se almacenan y gestionan archivos y datos, comúnmente usado en desarrollo de software para rastrear cambios en el código.</li>
+            <li><strong> Repositorio Local:</strong> Versión del repositorio almacenada en la máquina del desarrollador. Permite trabajar de manera independiente y sin conexión.</li>
+            <li><strong> Repositorio Remoto:</strong> Versión del repositorio almacenada en un servidor accesible a través de la red. Facilita la colaboración y sincronización entre múltiples desarrolladores.</li>
+        </ul>
+    </p>
+
+    <h2>¿Qué es GITHUB?</h2>
+    <p>GitHub es una plataforma web que permite a los desarrolladores gestionar y colaborar en proyectos de código utilizando Git. Ofrece repositorios para almacenar y versionar código, herramientas para colaboración como pull requests e issues, y funciones adicionales para documentación y automatización. También facilita la integración con otras herramientas y servicios de desarrollo.</p>
+
+    <h2>¿Qué es una rama en GIT y para qué sirve?</h2>
+    <p>En Git, una rama es una bifurcación del código principal que permite trabajar en paralelo sin afectar el código en la rama principal (como "main" o "master"). Las ramas son útiles para desarrollar nuevas características, corregir errores o probar cambios de manera independiente. Facilitan la colaboración al permitir que varios desarrolladores trabajen en diferentes tareas simultáneamente y se pueden fusionar de nuevo en la rama principal cuando están listas y revisadas.</p>
+
+    <h2>Estados en Git</h2>
+    <div class="state">
+        <h3>Untracked</h3>
+        <p>Archivos nuevos que aún no se han añadido al control de versiones.</p>
+    </div>
+    <div class="state">
+        <h3>Tracked</h3>
+        <p>Archivos que Git está rastreando, con subestados:</p>
+        <ul>
+            <li><strong>Unmodified</strong>: No ha cambiado desde el último commit.</li>
+            <li><strong>Modified</strong>: Ha cambiado pero no se ha añadido al área de preparación.</li>
+            <li><strong>Staged</strong>: Cambios listos para ser confirmados en el próximo commit.</li>
+        </ul>
+    </div>
+    <div class="state">
+        <h3>Committed</h3>
+        <p>Cambios guardados en el repositorio.</p>
+    </div>
+    <div class="state">
+        <h3>Ignored</h3>
+        <p>Archivos que Git no rastrea debido a las reglas en <code>.gitignore</code>.</p>
+    </div>
+
+    <h2>¿Qué es la terminal, consola o línea de comandos y para qué sirve?</h2>
+
+    <p>La terminal, consola o línea de comandos es una interfaz de usuario basada en texto que permite interactuar con el sistema operativo a través de comandos escritos. A diferencia de las interfaces gráficas de usuario (GUI), donde se usan iconos y menús, en la terminal se introduce texto para realizar operaciones.</p>
+
+    <h2>7. ¿Qué es la terminal, consola o línea de comandos y para qué sirve?</h2>
+    <p>
+        La terminal, consola o línea de comandos es una interfaz de texto que permite a los usuarios interactuar con el sistema operativo. A través de comandos escritos, los usuarios pueden ejecutar programas, manipular archivos, configurar el sistema y realizar otras tareas administrativas. Es una herramienta poderosa para usuarios avanzados y administradores de sistemas.
+    </p>
+
+    <h2>8. Escribir el funcionamiento de cada uno de los siguientes comandos:</h2>
+    <ul>
+        <li><code>ls</code>: Lista los archivos y directorios en el directorio actual.</li>
+        <li><code>cd &lt;directorio&gt;</code>: Cambia el directorio actual al especificado.</li>
+        <li><code>cd ..</code>: Cambia al directorio padre del directorio actual.</li>
+        <li><code>pwd</code>: Muestra la ruta completa del directorio actual.</li>
+        <li><code>mkdir &lt;nombre&gt;</code>: Crea un nuevo directorio con el nombre especificado.</li>
+        <li><code>touch &lt;nombre&gt;</code>: Crea un nuevo archivo vacío con el nombre especificado o actualiza la fecha de modificación si el archivo ya existe.</li>
+        <li><code>rm &lt;nombre&gt;</code>: Elimina el archivo o directorio especificado. (Con precaución ya que es irreversible)</li>
+        <li><code>cp &lt;nombre&gt; &lt;directorio&gt;</code>: Copia el archivo o directorio especificado al destino indicado.</li>
+        <li><code>mv &lt;nombre&gt; &lt;directorio&gt;</code>: Mueve o renombra el archivo o directorio especificado al destino indicado.</li>
+    </ul>
+
+    <h2>9. Realizar un listado con el nombre y el funcionamiento de los comandos vistos en la sesión
+        de clase de GIT.</h2>
+
+        <img src="img/Captura de pantalla 2024-08-05 a la(s) 10.31.28 a.m..png" alt="">
+        <img src="img/Captura de pantalla 2024-08-05 a la(s) 10.31.49 a.m..png" alt="">
+
+</body>
+</html>

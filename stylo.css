@@ -1,0 +1,42 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; 
+    color: #e0e0e0; 
+    line-height: 1.6;
+    margin: 35px;
+    padding: 35px;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #393838; 
+}
+
+h1 {
+    color: #ff4c4c; 
+}
+h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: red;
+}
+
+img{
+    width: 40%;
+    border-radius: 10px;
+    height: 50%;
+    overflow: hidden;
+    margin-left: 25%;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #ff4c4c;
+}
+
